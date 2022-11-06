@@ -13,6 +13,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     localStorage.setItem("todosList", JSON.stringify(todosList));
 
+    e.target.reset();
+
     displayTodos();
   });
   displayTodos();
