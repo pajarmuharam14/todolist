@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #eee;
+}
+
+header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.create-new-todo {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.create-new-todo h3 {
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+#new-todo {
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  background: none;
+  outline: none;
+  text-transform: capitalize;
+}
+
+#submit {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.create-new-todo input {
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 100%;
+  margin: 10px;
+}
+
+.list-todo {
+  margin: 20px 15px;
+}
+
+.todo-item {
+  margin: 25px 10px;
+  border: 1px solid #000;
+  width: 100%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.text {
+  border: none;
+  outline: none;
+  appearance: none;
+  width: 250px;
+  margin: 20px 0px;
+  background: none;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.check {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.action {
+  padding: 10px 6px;
+}
+#edit,
+#delete {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#edit {
+  background-color: blue;
+  color: #eee;
+  padding: 5px 14px;
+}
+
+#delete {
+  background-color: red;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.done input {
+  text-decoration: line-through;
+  color: rgb(114, 111, 111);
+}
+
+@media (max-width: 420px) {
+  .text {
+    width: 190px;
+  }
+
+  #edit,
+  #delete {
+    font-size: 14px;
+    margin: 7px 3px;
+  }
+
+  #edit {
+    padding: 3px 7px;
+  }
+
+  #delete {
+    padding: 3px 6px;
+  }
+}
